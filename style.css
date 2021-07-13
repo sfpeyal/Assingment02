@@ -1,3 +1,93 @@
+/*------------------------------------------------------------------
+                            google fonts
+-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/*------------------------------------------------------------------
+                     common style of utilities 
+------------------------------------------------------------------- */ 
 body{
-    background-color: brown;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.container{
+    margin-bottom: 160px;
+}
+.watch-btn{
+    display: flex;
+    align-items: center;
+    height: 44px;
+    width: 172px;
+    background-color: #E02C6D;
+    justify-content: space-evenly;
+    transition: transform 250ms;
+}
+.watch-btn .watch-p{
+    color: #ffffff;
+}
+.watch-btn:hover {
+    transform: translateY(-10px);
+  }
+/*------------------------------------------------------------------ 
+                        player news styles 
+-------------------------------------------------------------------*/
+.players-news{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    width: 1050px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}    
+.player .player-info{
+width: 300px;
+}
+.player h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: #18191F;
+}
+.player p{
+    font-size: 16px;
+}
+
+/*-----------------------------------------------------------------
+                        highlights styles 
+------------------------------------------------------------------*/
+
+.highlight{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+}
+.highlight-detail{
+    width: 40%;
+   padding-right: 10%;
+}
+.highlight-detail h2{
+    font-size: 48px;
+    color: #0A0826;
+}
+.highlight-detail p{
+    color: #6C6C6C;
+    font-size: 16px;
+}
+.highlight-sence{
+    width: 50%;
+}
+.highlight-sence img{
+    width: 100%;
 }
