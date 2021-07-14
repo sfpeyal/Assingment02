@@ -66,8 +66,11 @@ nav .nav-list a{
     color: #FFFFFF;
     font-size: 64px;
 }
+.banner-cover{
+    width: 665px;
+}
 .banner img{
-    width: 655px;
+    width: 100%;
 }
 
 /*------------------------------------------------------------------ 
@@ -158,4 +161,56 @@ footer{
     padding: 16px 13px;
     background-color: #D3D3D3;
     border-radius: 50%;
+}
+
+/*------------------------------------------------------------------
+                     media queries break points  
+--------------------------------------------------------------------*/
+
+/* MOBILE VIEW  */
+@media only screen and (max-width: 688px) {
+    .players-news, .banner, .highlight{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-info{
+        margin: auto;
+    }
+    .player{
+        margin: auto;
+    }
+    .highlight-detail{
+        margin: auto;
+    }
+    .highlight-sence, .banner-cover{
+        margin: auto;
+        padding-top: 20px;
+
+    }
+}
+/* TAB VIEW  */
+@media only screen and (min-width: 688px) and (max-width: 1100px){
+    .players-news{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        }
+    .player{
+        margin: auto;
+    }
+    .banner, .highlight{
+        width: 100%;
+        display: grid;
+         grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-info, .banner-cover{
+        margin: auto;
+    }
+    .highlight-detail, .highlight-sence{
+        margin: auto;
+    }
+    .highlight-sence, .banner-cover{
+        padding-top: 30px;
+    }
 }
